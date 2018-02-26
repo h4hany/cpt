@@ -30,7 +30,7 @@ function getSpecialities() {
     })
 }
 
-production = "https://admin.balsamee.com/api/v5/", staging = "https://bece2906.ngrok.io/api/v5/", devlopment = "http://localhost:3000/api/v5/", language = $("#language").val(), $(document).ready(function () {
+production = "https://admin.balsamee.com/api/v5/", staging = "http://817100e4.ngrok.io/api/v5/", devlopment = "http://localhost:3000/api/v5/", language = $("#language").val(), $(document).ready(function () {
     $("#telephone_number").intlTelInput({
         utilsScript: "js/utils.js",
         autoPlaceholder: "aggressive",
