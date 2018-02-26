@@ -1,7 +1,7 @@
 function getCountries() {
     $.ajax({
         type: "GET",
-        url: production + "cross_border_treatments/countries?lang=" + language,
+        url: staging + "cross_border_treatments/countries?lang=" + language,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (e, t, n) {
@@ -17,7 +17,7 @@ function getCountries() {
 function getSpecialities() {
     $.ajax({
         type: "GET",
-        url: production + "treatments_groups?lang=" + language,
+        url: staging + "treatments_groups?lang=" + language,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (e, t, n) {
@@ -60,7 +60,7 @@ production = "https://admin.balsamee.com/api/v5/", staging = "https://admin-stag
         };
         $.ajax({
             type: "POST",
-            url: production + "cross_border_treatment_requests?lang=" + language,
+            url: staging + "cross_border_treatment_requests?lang=" + language,
             data: JSON.stringify({cross_border_treatment: e}),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
